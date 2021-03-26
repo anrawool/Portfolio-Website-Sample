@@ -654,10 +654,7 @@ p {
 }
 
 #services a[class="cta"] {
-    position: absolute;
-    bottom: 30px;
-    left: 80px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .cloud-hosting {
@@ -919,3 +916,7 @@ input[type=checkbox]{
     }
 }
 
+
+#about .col-right p {
+    text-align: left;
+}

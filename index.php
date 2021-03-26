@@ -29,8 +29,8 @@
                             <li><a href="#projects" data-after="projects">Projects</a></li>
                             <li><a href="#about" data-after="About">About</a></li>
                             <li><a href="signup.php" data-after="Contact">Contact</a></li>
-                            <li><a href="#" onclick="popup()">Settings</a></li>
-                            <li><a href="signup.html">Sign Up</a></li>
+                            <li><a href="#" onclick="popup()" data-after="Settings">Settings</a></li>
+                            <li><a href="signup.html" data-after="Account">Sign Up</a></li>
                         </ul>
                     </div>
                 </div>
@@ -230,16 +230,8 @@
                 </div>
                 <div class="col-right">
                     <h1 class="section-title">About <span>me</span></h1>
-                    <h2>Full-stack Developer</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                        deserunt mollit anim id est laborum.
-                    </p>
+                    <h2>PHP Developer</h2>
+                    <p>I am on my way to become a PHP developer. <br>My sites are somewhat based on PHP files.</p>
                     <a href="#" class="cta">Download Resume</a>
                 </div>
             </div>
