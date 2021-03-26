@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Downloads/project/img"
+		},
+		{
+			"path": "../../../Downloads/project/css"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Programming Projects"
+	}
+}
