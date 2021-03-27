@@ -148,17 +148,28 @@ Array Methods
 myArr.pop();
 console.log(myArr.push(newItem));
 console.log(myArr);
-*/
 
-// String Methods in JavaScript 
+
+String Methods in JavaScript
 let myString = "My String!!";
-// console.log(myString.length);
-// console.log(myString.indexOf("s"));
+console.log(myString.length);
+console.log(myString.indexOf("s"));
 console.log(myString.replace("String", "string"));
-// console.log(myString.slice(0, 3));
+console.log(myString.slice(0, 3));
 
 myDate = new Date();
-// console.log(myDate.getTime());
-// console.log(myDate.getFullYear());
-// console.log(myDate.getDay());
-// console.log(myDate.getMinutes());
+console.log(myDate.getTime());
+console.log(myDate.getFullYear());
+console.log(myDate.getDay());
+console.log(myDate.getMinutes());
+
+DOM Manipulation
+
+let elem = document.getElementById('click');
+console.log(elem);
+let elemClass = document.getElementsByClassName('container');
+console.log(elemClass);
+
+elemClass[0].classList.add("text-sucess");
+elemClass[0].classList.add("bg-primary");
+*/
