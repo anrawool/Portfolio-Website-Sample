@@ -9,83 +9,17 @@
         <link rel="stylesheet" href="css/forms.css">
     </head>
     <body>
-
-    <form action="index.html" method="POST" style="float:center;">
-        <h1>Sign Up</h1>
-
-        <fieldset>
-
-            <legend><span class="number">1</span>Your Basic Information</legend>
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name" class="rounded">
-
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" name="user_email" class="rounded">
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="user_password" class="rounded">
-
-            <label>Age:</label>
-            <input type="radio" id="under_13" value="under_13" name="user_age">
-            <label for="under_13" class="light">Under 13</label><br>
-            <input type="radio" id="over_13" value="over_13" name="user_age">
-            <label for="over_13" class="light">13 or Older</label>
-
-        </fieldset>
-
-        <fieldset>
-
-            <legend><span class="number">2</span>Your Profile</legend>
-
-            <label for="bio">Biography:</label>
-            <textarea name="user_bio" id="bio" class="rounded"></textarea>
-
-            <label for="job">Job role:</label>
-            <select name="user_job" id="job" class="rounded">
-                <optgroup label="Web">
-                    <option value="frontend_developer">Front-End Developer</option>
-                    <option value="php_developer">PHP Developer</option>
-                    <option value="python_developer">Python Developer</option>
-                    <option value="java_developer">Java Developer</option>
-                    <option value="wordpress_developer">Wordpress Developer</option>
-                    <option value="web_designer">Web Desinger</option>
-                </optgroup>
-
-                <optgroup label="Mobile">
-                    <option value="ios_developer">IOS Developer</option>
-                    <option value="rails_developer">Rails Developer</option>
-                    <option value="mobile_developer">Mobile Developer</option>
-                </optgroup>
-
-                <optgroup label="Business">
-                    <option value="business_owner">Business Owner</option>
-                    <option value="freelancer">Freelancer</option>
-                </optgroup>
-                <option value="other">Other</option>
-            </select>
-
-            <label>Interests:</label>
-            <input type="checkbox" id="development" value="interest_development" name="user_interest">
-            <label class="light" for="development">Development</label><br>
-
-            <input type="checkbox" id="design" value="interest_design" name="user_interest">
-            <label class="light" for="design">Design</label><br>
-
-            <input type="checkbox" id="business" value="interest_business" name="user_interest">
-            <label class="light" for="business">Business</label><br>
-
-            <input type="checkbox" id="other" value="interest_other" name="user_interest">
-            <label class="light" for="other">Other</label><br>
-
-        </fieldset>
-        <button type="submit" class="button-round inln btn">Sign Up</button>
-        <button type="reset" class="error inln btn">Reset</button>
-        <div class="back-links">
-            <a href="index.php">Came here by mistake?</a>
-            <a href="signin.html">Already have a account?</a>
-        </div>
-    </form>
-    
+        <form action="http://localhost:3000/Real_Projects/Final_Project/index.php" class="box" method="POST">
+            <h1>Sign Up</h1>
+            <input type="text" name="" placeholder="Username">
+            <input type="email" name="" placeholder="Email id">
+            <input type="password" name="" placeholder="Password">
+            <button type="submit" href="index.php">Sign Up</button>
+            <div class="backlink">
+                <a href="http://localhost:3000/Real_Projects/Final_Project/index.php">Came here by mistake</a>
+                <a href="signin.html">Already have a account?</a>
+            </div>
+        </form>
+    </body>
     </body>
 </html>

@@ -1,3 +1,7 @@
+/* @import url(tealsignin.css);
+@import url(tealforms.css);
+@import url(tealsetting-style.css); */
+
 * {
     padding: 0;
     margin: 0;
@@ -21,7 +25,7 @@ html[data-theme='dark'] {
     --bg-panel: #434343;
     --color-headings: #ffffff;
     --color-text: #ffffff;
-    --span-color: rgb(0, 195, 255);
+    --span-color: teal;
     --button-color: white;
     --color-toggle: #3694FF; 
 }
@@ -32,7 +36,7 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     color: var(--color-headings);
-    --span-color: rgb(16, 141, 179);
+    --span-color:teal;
     --button-color: black;
 }
 
@@ -83,7 +87,7 @@ p {
     padding: 10px 30px;
     color: white;
     background-color: transparent;
-    border: 2px solid#3694FF;
+    border: 2px solid teal;
     border-radius: 10px;
     font-size: 2rem;
     text-transform: uppercase;
@@ -94,7 +98,7 @@ p {
 
 .cta:hover {
     color: white;
-    background-color: rgb(37, 134, 163);
+    background-color: teal;
 }
 
 .brand h1 {
@@ -104,7 +108,7 @@ p {
 }
 
 .brand span {
-    color: #3694dF;
+    color: teal;
 }
 
 /* Header Section*/
@@ -183,7 +187,7 @@ p {
 }
 
 #header .nav-list ul li:hover a{
-    color: #3694dF;
+    color: teal;
 }
 
 #header .hamburger {
@@ -311,7 +315,7 @@ p {
     left: 0;
     height: 100%;
     width: 0;
-    background-color: #3694FF;
+    background-color: teal;
     animation: text_reveal_box 1s ease;
     animation-delay: .3s;
 }
@@ -532,7 +536,7 @@ p {
     top: 19px;
     height: 98%;
     width: 98%;
-    border: 7px solid #72bcf8;
+    border: 7px solid teal;
     z-index: -1;
 }
 /* End About Me Section */
@@ -615,7 +619,7 @@ p {
 
 @keyframes text_reveal_name {
     100% {
-        color: #3694dF; 
+        color: teal; 
         font-weight: 500;
     }
 }
@@ -639,7 +643,7 @@ p {
 
 .btn:hover {
     color: white;
-    background-color: rgb(90, 11, 27);
+    background-color: teal;
 }
 /* End Other */
 
@@ -721,7 +725,7 @@ p {
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     color: white;
-    background: linear-gradient( to top right, #3178b3, #7700ff);
+    background: linear-gradient( to top right, teal, #7700ff);
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
@@ -739,39 +743,6 @@ p {
     margin-top: 30px;
     padding: 15px 15px;
     color: white;
-}
-#popup-settings button[class="color-theme"]:not(:nth-child(1)) {
-    margin-left: 30px;
-}
-#popup-settings button[class="color-theme"]:focus{
-    outline: none;
-}
-
-#popup-settings button[class="color-theme"]:hover {
-    border: 2px solid black;
-    transform: scale(.9);
-    transition: .25s ease-in-out;
-}
-
-#popup-settings button[id="default-switch"] {
-        color:  rgb(16, 141, 179);
-        border: none;
-        background-color:  rgb(16, 141, 179);
-        border-radius: 10px;
-}
-
-#popup-settings button[id="teal-switch"] {
-    color: teal;
-    border: none;
-    background-color: teal;
-    border-radius: 10px;
-}
-
-#popup-settings button[id="crimson-switch"] {
-    color: crimson;
-    border: none;
-    background-color: crimson;
-    border-radius: 10px;
 }
 
 .nav-button {
@@ -906,7 +877,7 @@ input[type=checkbox]{
         top: 24px;
         height: 98%;
         width: 98%;
-        border: 10px solid #72bcf8;
+        border: 10px solid teal;
     }
 
     #about .col-right {
@@ -962,7 +933,7 @@ input[type=checkbox]{
 #popup-settings form select{
     padding: 8px 12px;
     color: #333333;
-    background-color: #3694FF;
+    background-color: teal;
     border: 1px solid #ddd;
     cursor: pointer;
     border-radius: 5px;

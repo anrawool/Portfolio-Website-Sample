@@ -59,3 +59,4 @@ function form() {
     var formSettings = document.getElementById('form');
     formSettings.classList.toggle('active');
 }
+

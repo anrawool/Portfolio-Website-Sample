@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link id="themeStylesheet" rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;700&display=swap" rel="stylesheet">
     <title>My Website</title>
@@ -267,10 +267,27 @@
                     <input type="checkbox" id="switch" name="theme" />
                     <label for="switch">Toggle</label>
                 </div>
+                <hr>
+                <h2>Color Theme:</h2>
+                <form action="./" method="post">
+                    <select name="themeSelect" id="themeSelect">
+                        <option type="checkbox" id="default-switch" name="theme" class="color-theme">Default</option>
+                        <option value="tealstyle" type="checkbox" id="teal-switch" name="theme" class="color-theme">Teal</option>
+                        <option value="crimsonstyle"type="checkbox" id="crimson-switch" name="theme" class="color-theme">Crimson</option>
+                    </select>
+                </form>
             <button href="#" onclick="popup()" class="cta">Save</button>
         </div>
         <!-- End Footer -->
     </div>
     <script src="app.js"></script>
+    <script>
+        const themeSelect = document.getElementById("themeSelect");
+        const themeStylesheet = document.getElementById("themeStylesheet");
+
+        themeSelect.addEventListener("change", function () {
+            themeStylesheet.setAttribute("href", "css/" + this.value + ".css")
+        });
+    </script>
 </body>
 </html>

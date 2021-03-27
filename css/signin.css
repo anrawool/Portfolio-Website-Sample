@@ -1,86 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #34495e;
+}
 
-*, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Nunito', sans-serif;
-    color: #ffffff;
-    background-color: #E64A19;
-  }
-  
-  form {
-    max-width: 300px;
-    margin: 300px auto;
-    padding: 10px 20px;
-    background: #FFCCBC;
-    border-radius: 8px;
-    color: black;
-    border: 2px solid #757575;
-  }
+.box {
+  border-radius: 20px;
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #191919;
+  text-align: center;
+}
 
-  
-  h1 {
-    margin: 0 0 30px 0;
-    text-align: center;
-    color: black;
-  }
-  
-  form input{
-    border: none;
-    font-size: 16px;
-    height: auto;
-    margin: 0;
-    outline: 0;
-    padding: 15px;
-    width: 100%;
-    color: #8a97a0;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 30px;
-    border-radius: 5px;
-  }
+.box h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
 
-  
-  button {
-    padding: 19px 39px 18px 39px;
-    color: #FFF;
-    background-color: #4bc970;
-    font-size: 18px;
-    text-align: center;
-    font-style: normal;
-    border-radius: 5px;
-    width: 100%;
-    border-width: 1px 1px 3px;
-    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-    margin-bottom: 10px;
-    border: none;
-  }
+.box input[type="text"], .box input[type="password"] {
+  font-size: 20px;
+  border: 0;
+  background: none;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline:none;
+  color: white;
+  border-radius: 24px;
+  transition: .25s;
+}
 
-  @media screen and (min-width: 480px) {
-  
-    form {
-      max-width: 480px;
-      align-self: left;
-    }
-  
-  }
-  
-  @media (min-width:769px) {
-    .inln {
-        width: auto;
-        display: inline-block;
-    }
-    .btn + .btn {
-      margin-left: 12px;
-    }
-  }
 
-form a {
+.box input[type="text"]:focus, .box input[type="password"]:focus {
+  width: 280px;
+  border-color: #2ecc71;
+}
+
+.box button[type="submit"] {
+  font-size: 20px;
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: .25s;
+  cursor: pointer;
+}
+
+.box button[type="submit"]:hover {
+  background: linear-gradient(to top right, #2eccaa, rgb(69, 170, 253));
+  color: black;
+  transition: .25s;
+}
+
+.box .backlink a {
+  color: white;
+  font-weight: 900;
   font-size: 12px;
   text-decoration: underline;
-  font-weight: 900;
-  color: #757575;
-  padding-left: 12px;
+}
+
+.box .backlink a:nth-child(2) {
+  margin-left: 20px;
 }
