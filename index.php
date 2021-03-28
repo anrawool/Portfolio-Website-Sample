@@ -46,7 +46,9 @@
                     <h1>My Name is <span></span></h1>
                     <h1>Sarthak <span></span></h1>
                     <a href="#projects" type="button" class="cta">Portfolio</a>
-                </div>
+            </div>
+            <div id="time-proj" class="card">
+                <h2 class="display-4">Current Time is: <span id="time"></span></h2>
             </div>
         </section>
         <!-- End Hero Section  -->
@@ -147,17 +149,18 @@
                             <h1>Project 2</h1>
                             <h2>Coding is Love</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                        deserunt mollit anim id est laborum.
+                                I have made a convinient note taking web app so that you can store all your notes or TODOs in their. I am going to add new features like:
+                                <ul>
+                                    <li>Searching</li>
+                                    <li>Filtering</li>
+                                    <li>Tags</li>
+                                    <li>And More...</li>
+                                </ul>
                             </p>
+                            <a href="JavaScript_Project/notes.html" class="cta" target="_blank">Take a Look!</a>
                         </div>
                         <div class="project-img">
-                            <img src="img/images.jpg" alt="Img 1">
+                            <img src="img/todo-list-img.png" alt="Img 1">
                         </div>
                         <div class="project-btn">
                         </div>
