@@ -15,7 +15,7 @@
             <div class="header container">
                 <div class="nav-bar">
                     <div class="brand">
-                        <a href="#hero"><h1><span>S</span>arthak <span>A</span> <span>R</span>awool</h1></a>
+                        <img src="./img/Sarthak Rawool-logos.jpeg" alt="Logo" id="my-logo">
                     </div>
                     <div class="nav-list">
                         <div class="hamburger">
@@ -40,15 +40,17 @@
 
         <!-- Hero Section -->
         <section id="hero">
-            <div class="hero container">
-                <div class="greet-text">
-                    <h1>Hello,<span></span></h1>
-                    <h1>My Name is <span></span></h1>
-                    <h1>Sarthak <span></span></h1>
-                    <a href="#projects" type="button" class="cta">Portfolio</a>
-            </div>
-            <div id="time-proj" class="card">
-                <h2 class="display-4">Current Time is: <span id="time"></span></h2>
+            <div class="flex-hero">
+                <div class="hero container">
+                    <div class="greet-text">
+                        <h1>Hello,<span></span></h1>
+                        <h1>My Name is, <span></span></h1>
+                        <h1>Sarthak <span></span></h1>
+                        <a href="#projects" type="button" class="cta">Portfolio</a>
+                </div>
+                <div id="time-proj" class="card">
+                    <h2 class="display-4">Current Time is: <span id="time"></span></h2>
+                </div>
             </div>
         </section>
         <!-- End Hero Section  -->
@@ -65,13 +67,9 @@
                     
                     <h2>Web Design</h2>
                     <p class="service-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                        deserunt mollit anim id est laborum.
+                        Get your website designed right now! You will get full services and client support from me and I will ensure that you get the best services that i can offer. <br> <br>
+                        Web Design, sometimes, can get a little too comploicated for you to handle. But not to worry, I will offer you the best services and get your website up and running in no time! <br> <br> <br>
+                        Sign up now to get the best services in short time!!
                     </p>
                     <a href="#" class="cta" target="_blank">Get started</a>
                     </div>
@@ -80,13 +78,9 @@
                     
                     <h2>Web Development</h2>
                     <p class="service-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                        deserunt mollit anim id est laborum.
+                        Are you a little confused about how to build your website? Then, you are at the right place! Get your website coded and hosted now! <br> <br>
+                        Still a little confused? No wrorries, I have got you covered. All you have to do is make a account and sign up for a trial website. <br> <br> <br>
+                        Sign up now! Get your own website by sitting in a chair.
                     </p>
                     <a href="#" class="cta" target="_blank">Get started</a>
                     </div>
@@ -95,13 +89,9 @@
                     
                     <h2>Full Website Design and Code</h2>
                     <p class="service-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                        deserunt mollit anim id est laborum.
+                        Confused which service to choose? Do not worry, get your webiste designed <b>and</b> coded. If you are a busy person and do not get any time, you have come to the correct place. <br> <br>
+                        I will design and code your website for you. All you have to do is tell me the type of website you want and Voila! you have your website designed and coded in no time! <br> <br> <br>
+                        Sign up now! Have your own website designed and coded in no time!
                     </p>
                     <a href="#" class="cta" target="_blank">Get started</a>
                     </div>
@@ -110,13 +100,9 @@
                     
                     <h2>Web Technologies Updates</h2>
                     <p class="service-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                        deserunt mollit anim id est laborum.
+                        New to coding? No need to panic, I have got you covered on all the new technologies. Sign up for the daily newsletter on Web Technologies. <br> <br>
+                        You will get updates on all front-end and back-end technologies. the more you learn, the better you can code. If you don't know anything about coding, you can start right here! <br> <br> <br>
+                        Sign up for the daily newsletter here!
                     </p>
                     <a href="#" class="cta" target="_blank">Get started</a>
                     </div>
@@ -233,8 +219,7 @@
                 </div>
                 <div class="col-right">
                     <h1 class="section-title">About <span>me</span></h1>
-                    <h2>PHP Developer</h2>
-                    <p>I am on my way to become a PHP developer. <br>My sites are somewhat based on PHP files.</p>
+                    <h2>Hello, I am a PHP Developer</h2>
                     <a href="#" class="cta">Download Resume</a>
                 </div>
             </div>
@@ -259,7 +244,7 @@
                         <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="none"></a>
                     </div>
                 </div>
-                <p>Copyright &copy; </p>
+                <p>Copyright &copy; 2021 Sarthak Rawool</p>
             </div>
         </section>
     </div>

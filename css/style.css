@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+#my-logo {
+    width: 105px;
+    border-radius: 50%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 div#popup.active {
     filter: blur(20px);
     pointer-events: none;
@@ -516,11 +524,15 @@ p {
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: .2rem;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 #about .col-right p {
+    position: absolute;
+    top: 30%;
+    left: 20%;
     margin-bottom: 20px;
+    text-align: center;
 }
 #about .col-right .cta {
     margin-bottom: 20px;
@@ -737,14 +749,28 @@ p {
     background: linear-gradient( to top right, #3178b3, #7700ff);
     visibility: hidden;
     opacity: 0;
-    transition: 0.5s;
+    transition: 2s;
 }
 
 #popup-settings.active {
     top: 500px;
     visibility: visible;
     opacity: 1;
-    transition: 0.5s;
+    transition: 1.5s;
+}
+
+@media only screen and (max-width:1150px) {
+    #popup-settings.active {
+        width: 500px;
+        transition: 2s;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    #popup-settings.active {
+        width: 450px;
+        transition: 2s;
+    }
 }
 
 #popup-settings button {
@@ -936,7 +962,7 @@ input[type=checkbox]{
 
 
 /* Media Queries for Desktop */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1247px) {
     #header .hamburger {
         display: none;
     }
@@ -954,7 +980,7 @@ input[type=checkbox]{
     }
 
     #header .nav-list ul li a {
-        font-size: 1.8rem;
+        font-size: 2.8rem;
     }
 
     #header .nav-list ul a:after {
@@ -1007,4 +1033,23 @@ input[type=checkbox]{
     font-size: 15px;
     font-weight: 900;
     margin: 20px 20px;
+}
+/* 
+@media only screen and (max-width:1343px) {
+    #hero .time-proj {
+        display: block;
+    }
+} */
+
+@media only screen and (max-width:1334px) {
+    #time-proj{
+        max-width: 400px;
+        transition: 2s;
+    }
+}
+
+@media only screen and (max-width:1111px) {
+    #time-proj{
+        display: none;
+    }
 }

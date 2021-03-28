@@ -8,6 +8,15 @@
     box-sizing: border-box;
 }
 
+
+#my-logo {
+    width: 105px;
+    border-radius: 50%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 div#popup.active {
     filter: blur(20px);
     pointer-events: none;
@@ -714,7 +723,6 @@ p {
 .greet-text h1:nth-child(1) {
     margin-top: 200px;
 }
-
 #popup-settings {
     position: fixed;
     top: 40px;
@@ -728,14 +736,35 @@ p {
     background: linear-gradient( to top right, #ff6161, #7700ff);
     visibility: hidden;
     opacity: 0;
-    transition: 0.5s;
+    transition: 2s;
 }
 
 #popup-settings.active {
     top: 500px;
     visibility: visible;
     opacity: 1;
-    transition: 0.5s;
+    transition: 2s;
+}
+
+@media only screen and (max-width:1150px) {
+    #popup-settings.active {
+        width: 500px;
+        transition: 2s;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    #popup-settings.active {
+        width: 450px;
+        transition: 1.5s;
+    }
+}
+
+#popup-settings.active {
+    top: 500px;
+    visibility: visible;
+    opacity: 1;
+    transition: 2s;
 }
 
 #popup-settings button {
@@ -894,7 +923,7 @@ input[type=checkbox]{
 
 
 /* Media Queries for Desktop */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1247px) {
     #header .hamburger {
         display: none;
     }
@@ -912,7 +941,7 @@ input[type=checkbox]{
     }
 
     #header .nav-list ul li a {
-        font-size: 1.8rem;
+        font-size: 2.8rem;
     }
 
     #header .nav-list ul a:after {
@@ -959,4 +988,29 @@ input[type=checkbox]{
 
 #popup-settings form select option {
     background: #fff;
+}
+
+
+@media only screen and (max-width:1343px) {
+    #hero .time-proj {
+        display: block;
+    }
+}
+
+
+#projects ul {
+    font-size: 15px;
+    font-weight: 900;
+    margin: 20px 20px;
+}
+
+
+#hero #time-proj {
+    position: relative;
+    top: 20%;
+    left: 20%;
+    font-size: 30px;
+    box-shadow: 1px 8px 7px -4px rgb(131, 129, 129);
+    -webkit-box-shadow: 1px 8px 7px -4px rgb(131, 129, 129, 1);
+    -moz-box-shadow: 1px 8px 7px -4px rgba(0,0,0,1);
 }
