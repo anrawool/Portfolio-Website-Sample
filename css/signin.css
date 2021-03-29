@@ -20,7 +20,7 @@ html {
 
 
 .box {
-  border-radius: 20px;
+  border-radius: 10px;
   width: 460px;
   height: 700px;
   padding: 40px;
@@ -206,4 +206,10 @@ form img[id="my-logo"] {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 
+}
+
+@media only screen and (max-width: 700px) {
+  .box {
+    width: 380px
+  }
 }
