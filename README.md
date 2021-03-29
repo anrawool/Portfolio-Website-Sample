@@ -1,6 +1,9 @@
 # Portfolio website
 
-In this website I am going to store all the projects that I have made and give regular updates.
+
+In this website I am going to make regular updates. you can get some design ideas from it as I would be building it as I learn different languages like `PHP, JavaScript, HTML and CSS`
+
+If you want to know more about the credits for this site, I will be uploading that page soon... But once it is done, you can go to the `credits.html` page.
 
 ## Upcoming Porjects and features:
 - Filtering for the TODO List web app
