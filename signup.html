@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sign Up Form</title>
-        <link rel="stylesheet" href="css/normalizeforms.css">
-        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/forms.css">
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <title>Login | Sarthak A Rawool</title>
+</head>
+<body>
+    <div class="wrapper">
         <form action="http://localhost:3000/Real_Projects/Final_Project/index.php" class="box" method="POST">
+            <img src="./img/Sarthak Rawool-logos_black.png" alt="Logo" id="my-logo">
             <h1>Sign Up</h1>
-            <input type="text" name="" placeholder="Username">
-            <input type="email" name="" placeholder="Email id">
-            <input type="password" name="" placeholder="Password">
-            <button type="submit" href="index.php">Sign Up</button>
+            <div>
+                <div class="input-icons">
+                    <i class="fa fa-user icon"></i>
+                    <input class="input-field" type="text" placeholder="Username">
+                    <i class="fa fa-envelope-open icon"></i>
+                    <input class="input-field" type="email" placeholder="Email">
+                    <i class="fa fa-lock icon"></i>
+                    <input class="input-field" type="password" placeholder="Password">
+                    
+                </div>
+            </div>
+            <button type="submit">Sign up</button>
+
             <div class="backlink">
                 <a href="http://localhost:3000/Real_Projects/Final_Project/index.php">Came here by mistake</a>
                 <a href="signin.html">Already have a account?</a>
             </div>
         </form>
-    </body>
-    </body>
+    </div>
+</body>
 </html>

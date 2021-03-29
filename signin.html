@@ -3,19 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/signin.css">
     <title>Login | Sarthak A Rawool</title>
 </head>
 <body>
-    <form action="http://localhost:3000/Real_Projects/Final_Project/index.php" class="box" method="POST">
-        <h1>Login</h1>
-        <input type="text" name="" placeholder="Username">
-        <input type="password" name="" placeholder="Password">
-        <button type="submit" href="index.php">Login</button>
-        <div class="backlink">
-            <a href="http://localhost:3000/Real_Projects/Final_Project/index.php">Came here by mistake</a>
-            <a href="signup.html">Don't have a account?</a>
-        </div>
-    </form>
+    <div class="wrapper">
+        <form action="http://localhost:3000/Real_Projects/Final_Project/index.php" class="box" method="POST">
+            <img src="./img/Sarthak Rawool-logos_black.png" alt="Logo" id="my-logo">
+            <h1>Login</h1>
+            <div>
+                <div class="input-icons">
+                    <i class="fa fa-user icon"></i>
+                    <input class="input-field" type="text" placeholder="Username">
+                    <i class="fa fa-lock icon"></i>
+                    <input class="input-field" type="password" placeholder="Password">
+                    
+                </div>
+                <label class="container">Remember Me
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <button type="submit">Login</button>
+
+            <div class="backlink">
+                <a href="http://localhost:3000/Real_Projects/Final_Project/index.php">Came here by mistake</a>
+                <a href="signup.html">Don't have a account?</a>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
