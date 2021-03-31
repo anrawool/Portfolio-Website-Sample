@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #52bab3;
+}
+
+h1, h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0;
+    padding: 20px;
+    background-image: linear-gradient(rgb(104, 104, 253), rgb(174, 88, 255));
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(126, 47, 33);
+}
+
+li {
+    margin-left: 40%;
+    font-size: 1.4rem;
+}
+
+a:hover {
+    font-weight: 900;
+    text-decoration: underline;
+}

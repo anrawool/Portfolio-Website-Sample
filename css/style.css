@@ -1053,3 +1053,14 @@ input[type=checkbox]{
         display: none;
     }
 }
+
+#footer a[class="credits"] {
+    color: tomato;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#footer a[class="credits"]:hover {
+    text-decoration: underline;
+    color: var(--color-toggle);
+}

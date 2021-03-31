@@ -244,7 +244,7 @@
                         <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="none"></a>
                     </div>
                 </div>
-                <p>Copyright &copy; 2021 Sarthak Rawool</p>
+                <p>Copyright &copy; 2021 Sarthak Rawool  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="credits.html" class="credits">Credits</a></p>
             </div>
         </section>
     </div>
