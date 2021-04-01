@@ -1021,3 +1021,108 @@ input[type=checkbox]{
     -webkit-box-shadow: 1px 8px 7px -4px rgb(131, 129, 129, 1);
     -moz-box-shadow: 1px 8px 7px -4px rgba(0,0,0,1);
 }
+
+
+.hero-parallax {
+    /* The image used */
+    background-image: url("img/bg.jpg");
+  
+    /* Set a specific height */
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.projects-parallax {
+    background-image: url('../img/projects.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider {
+    max-width: 1150px;
+    overflow: hidden;
+    display: flex;
+    margin: 0 auto;
+}
+
+.slider .card {
+    background: var(--span-color);
+    flex: 1;
+    margin: 0 10px;
+}
+
+.slider .card .img {
+    height: 200px;
+    width: 100%;
+}
+
+.slider .card .img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.slider .card .content {
+    padding: 10px 20px;
+    color: white;
+}
+
+.slider .card .content .cli-title{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.slider .card .content .sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 251, 251);
+    line-height: 20px;
+}
+
+.card .content p{
+    margin: 10px 0;
+}
+
+.card .content .cli-btn{
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.card .content .cli-btn button{
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid rgb(74, 250, 250);
+    border-radius: 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    transition-property: background-color, color;
+    margin: 0 auto;
+}
+
+.card .content .cli-btn button:hover{
+    transform: scale(0.9);
+    color: white;
+    background-color: teal;
+    transition: .3s ease;
+}
+
+.cli-header {
+    font-size: 4rem;
+    font-weight: 300;
+    color:var(--color-headings);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}

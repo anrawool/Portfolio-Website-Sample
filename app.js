@@ -1,3 +1,5 @@
+
+
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
@@ -73,4 +75,13 @@ setInterval(() => {
     time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
     document.getElementById('time').innerHTML = time + ' <br>on ' + date;
 }, 1000);
+
+
+
+const themeSelect = document.getElementById("themeSelect");
+const themeStylesheet = document.getElementById("themeStylesheet");
+
+themeSelect.addEventListener("change", function () {
+    themeStylesheet.setAttribute("href", "css/" + this.value + ".css")
+});
 

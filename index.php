@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom Styles -->
     <link id="themeStylesheet" rel="stylesheet" href="css/style.css">
+    <!-- End Custom Styles -->
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- End Fonts -->
+    <!-- Tailwind -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- End Tailwind -->
+    <!-- Other resouces -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <!-- End Other resouces -->
+
+
     <title>My Website</title>
 </head>
 <body>
     <div id="popup">
         <!-- Header -->
         <section id="header">
-            <div class="header container">
+            <div class="header container min-w-full">
                 <div class="nav-bar">
                     <div class="brand">
                         <img src="./img/Sarthak Rawool-logos.jpeg" alt="Logo" id="my-logo">
@@ -39,7 +54,7 @@
         <!-- End Header -->
 
         <!-- Hero Section -->
-        <section id="hero">
+        <section id="hero" class="hero-parallax">
             <div class="flex-hero">
                 <div class="hero container">
                     <div class="greet-text">
@@ -111,9 +126,10 @@
         </section>
         <!-- End Service Section -->
         <!-- Projects Section -->
+        <div class="projects-parallax"></div>
         <section id="projects">
             <div class="projects container">
-                <div class="projects-header">
+            <div class="projects-header">
                     <h1 class="section-title">Recent <span>Projects</span></h1>
                 </div>
                 <div class="all-projects">
@@ -209,6 +225,36 @@
             </div>
         </section>
         <!-- End Projects Section -->
+
+        <!-- Clients Section -->
+        <section id="client">
+            <div class="clients">
+                <div class="cli-header">
+                    <h1 class="section-title">What My <span>Clients</span> Think</h1>
+                </div>
+                <div class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner text-center lg:flex block w-full">
+                        <div class="carousel-item active card block mx-6">
+                            <img src="img/client-1.jpg" alt="none" class="client-img w-max d-block w-100 mx-auto">
+                            <h2 class=" font-bold text-6xl">David<br>Weston</h2>
+                            <p class="p-8">The service was awesome! I got a full fledged website in no time. All i did was sign up for the services!<br><b class="font-bold mt-7"> I say, you must try him!</b></p>
+                        </div>
+                        <div class="carousel-item active card block mx-6">
+                            <img src="img/client-2.jpg" alt="none" class="client-img d-block w-100">
+                            <h2 class="font-bold text-6xl">Winston Bradson</h2>
+                            <p>The service was awesome! I got a full fledged website in no time. All i did was sign up for the services!<br><b class="font-bold mt-7"> I say, you must try him!</b></p>
+                        </div>
+                        <div class="carousel-item active card block mx-6">
+                            <img src="img/client-3.jpg" alt="none" class="client-img d-block w-100">
+                            <h2 class="font-bold text-6xl">Peter Anderson</h2>
+                            <p>The service was awesome! I got a full fledged website in no time. All i did was sign up for the services!<br><b class="font-bold mt-7"> I say, you must try him!</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Clients Section -->
+
         <!-- About Me Section -->
         <section id="about">
             <div class="about container">
@@ -220,10 +266,11 @@
                 <div class="col-right">
                     <h1 class="section-title">About <span>me</span></h1>
                     <h2>Hello, I am a PHP Developer</h2>
-                    <a href="#" class="cta">Download Resume</a>
+                    <a href="app.js" class="cta" download >Download Resume</a>
                 </div>
             </div>
         </section>
+
 
         <!-- End About Me Section -->
 
@@ -232,18 +279,7 @@
             <div class="footer container">
                 <div class="brand"><h1><span>S</span>arthak <span> A </span> <span>R</span>awool</h1></div>
                 <h2>&nbsp; &nbsp; &nbsp; Your Complete Guide</h2>
-                <p>Want to know more about Development?</p>
-                <div class="social-icon">
-                    <div class="social-item">
-                        <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" alt="none"></a>
-                    </div>
-                    <div class="social-item">
-                        <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" alt="none"></a>
-                    </div>
-                    <div class="social-item">
-                        <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/services.png" alt="none"></a>
-                    </div>
-                </div>
+                <p>Want to know more about Development?   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="signup.html" class="credits">Sign Up now!</a></p>
                 <p>Copyright &copy; 2021 Sarthak Rawool  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="credits.html" class="credits">Credits</a></p>
             </div>
         </section>
@@ -270,12 +306,12 @@
     </div>
     <script src="app.js"></script>
     <script>
-        const themeSelect = document.getElementById("themeSelect");
-        const themeStylesheet = document.getElementById("themeStylesheet");
-
-        themeSelect.addEventListener("change", function () {
-            themeStylesheet.setAttribute("href", "css/" + this.value + ".css")
-        });
+    $(".slider").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000, //2000ms = 2s;
+        autoplayHoverPause: true,
+    });
     </script>
 </body>
 </html>
