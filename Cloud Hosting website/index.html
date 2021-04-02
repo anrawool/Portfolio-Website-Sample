@@ -9,166 +9,190 @@
     <title>Loruki  | Cloud Hosting For Everyone</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <div class="container flex">
-            <div class="logo"><h1>Loruki</h1></div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="docs.html">Docs</a></li>
-                </ul>
-            </nav>
+    <div id="popup">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="container flex">
+                <div class="logo"><h1>Loruki</h1></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="docs.html">Docs</a></li>
+                        <li><a onclick="popup()" data-after="Settings">Settings</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+
+        <!-- Showcase -->
+        <section class="showcase">
+            <section class="section-boundary"></section>
+            <div class="container grid">
+                <div class="showcase-text">
+                    <h1>Easer Deployment</h1>
+                    <p>Deploy web apps of all kinds, from large scale enterprise APIs to static websites for individuals. Fill out the form to try a demo of our platform</p>
+                    <a href="features.html" class="btn btn-outline">Read More</a>
+                </div>
+
+                <div class="showcase-form card">
+                    <h2>Request a Demo</h2>
+                    <form>
+                        <div class="form-control">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" name="company" placeholder="Company Name" required>
+                        </div>
+                        <div class="form-control">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <input type="submit" value="Send" class="btn btn-primary">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- End Showcase -->
+
+        <!-- Stats -->
+        <section class="stats">
+            <div class="container">
+                <h3 class="stats-heading text-center my-1">
+                    Welcome to the best platform for building applications of all types with modern architecture and scaling
+                </h3>
+
+                <div class="grid grid-3 text-center my-4">
+                    <div>
+                        <i class="fas fa-server fa-3x"></i>
+                        <h3>10, 464, 564</h3>
+                        <p class="text-secondary">
+                            Deployments
+                        </p>
+                    </div>
+                    <div><i class="fas fa-upload fa-3x"></i>
+                        <h3>937 TB</h3>
+                        <p class="text-secondary">
+                            Published
+                        </p></div>
+                    <div><i class="fas fa-project-diagram fa-3x"></i>
+                        <h3>3, 467, 345</h3>
+                        <p class="text-secondary">
+                            Projects
+                        </p></div>
+                </div>
+            </div>
+        </section>
+        <!-- End Stats -->
+
+        <!-- Cli -->
+        <section class="cli">
+            <div class="container grid">
+                <img src="images/cli.png" alt="">
+                <div class="card">
+                    <h3>Easy to use, cross platform CLI</h3>
+                </div>
+                <div class="card">
+                    <h3>Deploy your website in seconds</h3>
+                </div>
+            </div>
+        </section>
+        <!-- End Cli -->
+
+        <!-- Cloud -->
+        <section class="cloud bg-primary my-2 py-2">
+            <div class="container grid">
+                <div class="text-center">
+                    <h2 class="lg">Extreme Cloud Hosting</h2>
+                    <p class="lead my-1">Cloud hosting like you've never seen. Fast, effiecient and scalable</p>
+                    <a href="features.html" class="btn btn-dark">Read More</a>
+                </div>
+                <img src="images/cloud.png" alt="">
+            </div>
+        </section>
+        <!-- End Cloud -->
+
+        <!-- Languges -->
+        <section class="languages">
+            <h2 class="md text-center my-2">
+                Supported Languages
+            </h2>
+            <div class="container flex">
+                <div class="card">
+                    <h4>Node.js</h4>
+                    <img src="images/logos/node.png" alt="">
+                </div>
+                <div class="card">
+                    <h4>Python</h4>
+                    <img src="images/logos/python.png" alt="">
+                </div>
+                <div class="card">
+                    <h4>C#</h4>
+                    <img src="images/logos/csharp.png" alt="">
+                </div>
+                <div class="card">
+                    <h4>Ruby</h4>
+                    <img src="images/logos/ruby.png" alt="">
+                </div>
+                <div class="card">
+                    <h4>PHP</h4>
+                    <img src="images/logos/php.png" alt="">
+                </div>
+                <div class="card">
+                    <h4>Scala</h4>
+                    <img src="images/logos/scala.png" alt="">
+                </div>
+                <div class="card">
+                    <h4>Clojure</h4>
+                    <img src="images/logos/clojure.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- End Languges -->
+
+        <!-- Footer -->
+        <footer class="footer bg-dark py-5">
+            <div class="container grid grid-3">
+                <div>
+                    <h1>Loruki</h1>
+                    <p>Copyright &copy; 2020</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="http://localhost:3000/Real_Projects/Final_Project/index.php">Visit the main site</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="featurs.html">Features</a></li>
+                        <li><a href="docs.html">Docs</a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="https://github.com/anrawool/Portfolio-Website-Sample" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- End Footer -->
+    <div id="popup-settings">
+        <h1 class="section-title">Settings</h1>
+            <h2>Light / Dark Mode:</h2>
+            <div class="toggle-container">
+                <input type="checkbox" id="switch" name="theme" />
+                <label for="switch">Toggle</label>
+            </div>
+            <hr>
+            <h2>Color Theme:</h2>
+            <form action="./" method="post">
+                <select name="themeSelect" id="themeSelect">
+                    <option type="checkbox" id="default-switch" name="theme" class="color-theme">Default</option>
+                    <option value="tealstyle" type="checkbox" id="teal-switch" name="theme" class="color-theme">Teal</option>
+                    <option value="crimsonstyle"type="checkbox" id="crimson-switch" name="theme" class="color-theme">Crimson</option>
+                </select>
+            </form>
+        <button href="#" onclick="popup()" class="cta">Save</button>
     </div>
 
-    <!-- Showcase -->
-    <section class="showcase">
-        <section class="section-boundary"></section>
-        <div class="container grid">
-            <div class="showcase-text">
-                <h1>Easer Deployment</h1>
-                <p>Deploy web apps of all kinds, from large scale enterprise APIs to static websites for individuals. Fill out the form to try a demo of our platform</p>
-                <a href="features.html" class="btn btn-outline">Read More</a>
-            </div>
-
-            <div class="showcase-form card">
-                <h2>Request a Demo</h2>
-                <form>
-                    <div class="form-control">
-                        <input type="text" name="name" placeholder="Name" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" name="company" placeholder="Company Name" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <input type="submit" value="Send" class="btn btn-primary">
-                </form>
-            </div>
-        </div>
-    </section>
-    <!-- End Showcase -->
-
-    <!-- Stats -->
-    <section class="stats">
-        <div class="container">
-            <h3 class="stats-heading text-center my-1">
-                Welcome to the best platform for building applications of all types with modern architecture and scaling
-            </h3>
-
-            <div class="grid grid-3 text-center my-4">
-                <div>
-                    <i class="fas fa-server fa-3x"></i>
-                    <h3>10, 464, 564</h3>
-                    <p class="text-secondary">
-                        Deployments
-                    </p>
-                </div>
-                <div><i class="fas fa-upload fa-3x"></i>
-                    <h3>937 TB</h3>
-                    <p class="text-secondary">
-                        Published
-                    </p></div>
-                <div><i class="fas fa-project-diagram fa-3x"></i>
-                    <h3>3, 467, 345</h3>
-                    <p class="text-secondary">
-                        Projects
-                    </p></div>
-            </div>
-        </div>
-    </section>
-    <!-- End Stats -->
-
-    <!-- Cli -->
-    <section class="cli">
-        <div class="container grid">
-            <img src="images/cli.png" alt="">
-            <div class="card">
-                <h3>Easy to use, cross platform CLI</h3>
-            </div>
-            <div class="card">
-                <h3>Deploy your website in seconds</h3>
-            </div>
-        </div>
-    </section>
-    <!-- End Cli -->
-
-    <!-- Cloud -->
-    <section class="cloud bg-primary my-2 py-2">
-        <div class="container grid">
-            <div class="text-center">
-                <h2 class="lg">Extreme Cloud Hosting</h2>
-                <p class="lead my-1">Cloud hosting like you've never seen. Fast, effiecient and scalable</p>
-                <a href="features.html" class="btn btn-dark">Read More</a>
-            </div>
-            <img src="images/cloud.png" alt="">
-        </div>
-    </section>
-    <!-- End Cloud -->
-
-    <!-- Languges -->
-    <section class="languages">
-        <h2 class="md text-center my-2">
-            Supported Languages
-        </h2>
-        <div class="container flex">
-            <div class="card">
-                <h4>Node.js</h4>
-                <img src="images/logos/node.png" alt="">
-            </div>
-            <div class="card">
-                <h4>Python</h4>
-                <img src="images/logos/python.png" alt="">
-            </div>
-            <div class="card">
-                <h4>C#</h4>
-                <img src="images/logos/csharp.png" alt="">
-            </div>
-            <div class="card">
-                <h4>Ruby</h4>
-                <img src="images/logos/ruby.png" alt="">
-            </div>
-            <div class="card">
-                <h4>PHP</h4>
-                <img src="images/logos/php.png" alt="">
-            </div>
-            <div class="card">
-                <h4>Scala</h4>
-                <img src="images/logos/scala.png" alt="">
-            </div>
-            <div class="card">
-                <h4>Clojure</h4>
-                <img src="images/logos/clojure.png" alt="">
-            </div>
-        </div>
-    </section>
-    <!-- End Languges -->
-
-    <!-- Footer -->
-    <footer class="footer bg-dark py-5">
-        <div class="container grid grid-3">
-            <div>
-                <h1>Loruki</h1>
-                <p>Copyright &copy; 2020</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="featurs.html">Features</a></li>
-                    <li><a href="docs.html">Docs</a></li>
-                </ul>
-            </nav>
-            <div class="social">
-                <a href="https://github.com/anrawool/Portfolio-Website-Sample" target="_blank"><i class="fab fa-github fa-3x"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer -->
+    <script src="../app.js"></script>
 </body>
 </html>

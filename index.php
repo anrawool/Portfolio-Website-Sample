@@ -44,7 +44,7 @@
                             <li><a href="#projects" data-after="projects">Projects</a></li>
                             <li><a href="#about" data-after="About">About</a></li>
                             <li><a href="signup.php" data-after="Contact">Contact</a></li>
-                            <li><a href="#" onclick="popup()" data-after="Settings">Settings</a></li>
+                            <li><a onclick="popup()" data-after="Settings">Settings</a></li>
                             <li><a href="signup.html" data-after="Account">Sign Up</a></li>
                         </ul>
                     </div>
