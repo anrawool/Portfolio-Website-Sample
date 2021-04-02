@@ -2,9 +2,15 @@
 
 :root {
     --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
 }
 
 
+/* End Background and colored buttons */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -88,6 +94,36 @@ img {
     text-align: center;
 }
 
+.alert {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+
+}
+
+.alert i {
+    margin-right: 10px;
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: white;
+    border-radius: 10px;
+}
+
+.alert-error {
+    background-color: var(--error-color);
+    color: white;
+    border-radius: 10px;
+}
+
+code, pre {
+    background: rgb(9, 33, 62);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 /* Margins */
 
@@ -167,3 +203,4 @@ img {
 .p-3 {
     padding: 4rem ;
 }
+

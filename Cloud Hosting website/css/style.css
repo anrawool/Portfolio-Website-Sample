@@ -1,5 +1,87 @@
+/* Background and colored buttons */
+
+.bg-primary, 
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.bg-secondary, 
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.bg-dark, 
+.btn-dark {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.bg-light, 
+.btn-light {
+    background-color: var(--light-color);
+    color: #333;
+}
+
+
+.bg-primary a, 
+.btn-primary a,
+.bg-secondary a, 
+.btn-secondary a,
+.bg-dark a, 
+.btn-dark a {
+    color: white;
+}
+/* Text Colors */
+
+.text-primary, 
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary, 
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-dark, 
+.text-dark {
+    color: var(--dark-color);
+}
+
+.text-light, 
+.text-light {
+    color: var(--light-color);
+}text
+/* End Text Colors */
+
+
 /* Navbar styles */
 
+
+
+/* Text sizes */
+.lead {
+    font-size: 20px;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+}
+/* EndText sizes */
 .navbar {
     background-color: var(--primary-color);
     color: #fff;
@@ -25,7 +107,6 @@
 
 .navbar a:hover {
     border-bottom: 2px solid #fff;
-    border-top: 2px solid rgba(66, 66, 66, .8);
     border-bottom-left-radius: 1px;
     border-bottom-right-radius: 1px;
     border-top-left-radius: 1px;
@@ -66,6 +147,10 @@
 
 .showcase-form .form-control {
     margin: 30px 0;
+}
+
+.showcase-text {
+    animation: slideInFromLeft 1s ease-in;
 }
 
 .showcase-form input[type="text"],
@@ -120,6 +205,7 @@
     padding: 40px;
     z-index: 100;
     justify-self: flex-end;
+    animation: slideInFromRight 2s ease-in;
 }
 /* End Showcase Styles*/
 
@@ -127,6 +213,7 @@
 /* Stats Styles*/
 .stats {
     padding-top: 100px;
+    animation: slideInFromBottom 1s ease-in;
 }
 
 .grid-3 {
@@ -160,6 +247,12 @@
 }
 /* End CLI */
 
+/* Cloud */
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+/* End Cloud */
+
 /* Forms */
 .card {
     background-color: #fff;
@@ -170,3 +263,219 @@
     margin: 10px;
 }
 /* End Forms */
+
+/* Languages */
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: .2s ease-in;
+}
+
+.languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px) ;
+}
+/* End Languages */
+
+/* Features */
+.features-head img {
+    width: 200px;
+    justify-self: self-end;
+}
+
+.features-sub-hed img {
+    width: 300px;
+    justify-self: flex-end;
+}
+.features-main .card > i{
+    margin-right: 30px;
+}
+
+.features-main .grid > *{
+    grid-column: 1 / span 3;
+}
+
+.features-main .grid:first-child {
+    padding: 30px
+}
+
+/* End Features */
+
+
+/* Footer */
+
+.footer .social a {
+    margin: 0 10px;
+}
+
+/* End Footer */
+
+/* Docs */
+
+.docs-head img {
+    width: 200px;
+    justify-self: self-end;
+}
+
+.docs-main h3 {
+    margin: 20px 0;
+}
+
+.docs-main .grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+
+.docs-main nav li {
+    font-size: 17px;
+    padding-bottom: 5px;
+    border-bottom: 1px #ccc solid;
+    margin-bottom: 5px;
+}
+
+.docs-main a:hover {
+    font-weight: 900;
+}
+
+/* End Docs */
+
+/* Animations */
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+/* End Animations */
+
+/* Tablets and under */
+
+@media(max-width: 928px) {
+    .features-sub-head img {
+        max-width: 300px;
+    }
+    
+    .grid,
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid,
+    .features-main .grid,
+    .docs-main .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .btn-outline{
+        background-color: var(--dark-color);
+        border-color: var(--secondary-color);
+    }
+
+    .btn-primary {
+        background-color: var(--secondary-color);
+        margin-top: 17px;
+        padding: 19px 40px;
+    }
+
+    .showcase {
+        height: auto;
+    }
+
+    .showcase-text {
+        text-align: center;
+        margin-top: 50px;
+        animation: slideInFromTop 1s ease-in;
+    }
+
+    .showcase-form {
+        justify-self: center;
+        margin: auto;
+        margin-top:-35px;
+        animation: slideInFromBottom 2s ease-in;
+    }
+
+    .cli .grid > *:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .cli .grid .card h3 {
+        text-align: center;
+    }
+
+    .features-head,
+    .features-sub-head,
+    .docs-head {
+        text-align: center;
+    }
+    .features-head img,
+    .features-sub-head img,
+    .docs-head img {
+        justify-self: center;
+    }
+}
+/* End Tablets and under */
+
+/* Mobile */
+
+@media(max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, .1);
+    }
+}
+
+/* Mobile */
