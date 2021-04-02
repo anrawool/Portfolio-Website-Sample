@@ -3,13 +3,13 @@
 
 In this website I am going to make regular updates. you can get some design ideas from it as I would be building it as I learn different languages like `PHP, JavaScript, HTML and CSS`
 
-If you want to know more about the credits for this site, I will be uploading that page soon... But once it is done, you can go to the `credits.html` page.
+The credits page has been uploaded but be aware of the fact that it won't be very beautiful like the rest of the site. It is meant for content, and content alone. So no further styling will be applied to that particular page.
 
 ## Upcoming Porjects and features:
 - Filtering for the TODO List web app
 - Database handling and saving information about the user
 - Enhancing the clock
-
+- A Design Portfolio Website
 ## How to use
 
 - Step 1: Download all the files in this repository.
